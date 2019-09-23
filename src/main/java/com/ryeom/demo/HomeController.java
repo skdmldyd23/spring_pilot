@@ -17,21 +17,21 @@ import com.ryeom.demo.board.Service.BoardService;
 import com.ryeom.demo.user.Service.UserService;
 
 /**
- * Handles requests for the application home page.
+ * 마 도란나 정지워이 ㅡㅡ
  */
 @Controller
 public class HomeController {
-	
+
 	@Inject
 	private BoardService boardService;
-	
+
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index(Model model) {
 
-		model.addAttribute("boardtest",boardService.boardTest());
+		model.addAttribute("boardtest", boardService.boardTest());
 		System.out.println("이이이");
-		
-		//System.out.println(userService.Test().toString());
+
+		// System.out.println(userService.Test().toString());
 		return "index";
 	}
 }
