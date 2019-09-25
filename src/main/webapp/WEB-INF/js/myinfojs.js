@@ -4,18 +4,17 @@ const log = console.log;
 document.getElementById('submitt').addEventListener('click',()=>{
 	history.back(-1)
 } );
-window.onload = function(){ 	
-	document.getElementById('submittt').addEventListener('click',()=>{
-		if(sendIt()){
-			document.getElementById('f').submit();
-		}
-	}) 
-}
 
-
+document.getElementById('submit').addEventListener('click',()=>{
+	if(sendIt()){
+		alert("하이")
+		document.getElementById('myInfoForm').Submit();
+		//샌드
+	}
+} );
 function sendIt() {
 
-	const form = document.getElementById('f')
+	const form = document.getElementById('myInfoForm')
 
 	
 	var email = form.user_Email.value;
@@ -138,17 +137,17 @@ function sendIt() {
 
 	// 실행
 
-// const userData = {
-// user_ID : form.ID.value,
-// user_PW : form.user_PW.value,
-// user_Name : form.NAME.value,
-// user_Email : form.EMAIL.value,
-// user_postcode : form.postcode.value,
-// user_roadAddress : document.getElementById('roadAddress').value,
-// user_jibunAddress : document.getElementById('jibunAddress').value,
-// user_detailAddress : document.getElementById('detailAddress').value,
-// user_extraAddress : document.getElementById('extraAddress').value
-// }
+//	const userData = {
+//		user_ID : form.ID.value,
+//		user_PW : form.user_PW.value,
+//		user_Name : form.NAME.value,
+//		user_Email : form.EMAIL.value,
+//		user_postcode : form.postcode.value,
+//		user_roadAddress : document.getElementById('roadAddress').value,
+//		user_jibunAddress : document.getElementById('jibunAddress').value,
+//		user_detailAddress : document.getElementById('detailAddress').value,
+//		user_extraAddress : document.getElementById('extraAddress').value
+//	}
 	return true;
 
 	// signUpSubmit(userData);

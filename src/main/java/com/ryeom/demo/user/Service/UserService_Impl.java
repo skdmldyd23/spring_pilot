@@ -40,6 +40,7 @@ public class UserService_Impl implements UserService {
 			HttpSession ses= req.getSession();
 			ses.setAttribute("signedId", uu.getUser_ID());
 			ses.setAttribute("signedName", uu.getUser_Name());
+			ses.setAttribute("signedNumber", uu.getUser_Number());
 			return uu;
 		}
 	}

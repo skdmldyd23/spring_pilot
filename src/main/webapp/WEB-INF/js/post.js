@@ -1,4 +1,9 @@
 console.log('post loaded')
+
+document.getElementById('postCodeBtn').addEventListener('click',()=>{
+	Postcode()
+} );
+
 function Postcode() {
 			new daum.Postcode(
 					{

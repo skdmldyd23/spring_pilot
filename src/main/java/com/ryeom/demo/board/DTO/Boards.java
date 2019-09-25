@@ -3,10 +3,11 @@ package com.ryeom.demo.board.DTO;
 public class Boards {
 	private String board_Number;
 	private String board_Title;
-	private String board_Writer;
+	private int board_Writer;
 	private String board_Date;
 	private String board_Contents;
 	private String user_Name;
+	
 	public String getBoard_Number() {
 		return board_Number;
 	}
@@ -19,10 +20,10 @@ public class Boards {
 	public void setBoard_Title(String board_Title) {
 		this.board_Title = board_Title;
 	}
-	public String getBoard_Writer() {
+	public int getBoard_Writer() {
 		return board_Writer;
 	}
-	public void setBoard_Writer(String board_Writer) {
+	public void setBoard_Writer(int board_Writer) {
 		this.board_Writer = board_Writer;
 	}
 	public String getBoard_Date() {

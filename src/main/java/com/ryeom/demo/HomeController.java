@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.util.Date;
 import java.util.Locale;
 
+import javax.annotation.Resource;
 import javax.inject.Inject;
 
 import org.slf4j.Logger;
@@ -22,7 +23,7 @@ import com.ryeom.demo.user.Service.UserService;
 @Controller
 public class HomeController {
 	
-	@Inject
+	@Resource(name="boardService")
 	private BoardService boardService;
 	
 	@RequestMapping(value = "/", method = RequestMethod.GET)

@@ -31,12 +31,6 @@ public class UserController {
 		userService.logout(ses);
 		return "redirect:/";
 	}
-	
-	@RequestMapping("/write")
-	public String write(Model model) {
-
-		return "board/write";
-	}
 
 
 	@RequestMapping("/join")
@@ -63,5 +57,11 @@ public class UserController {
 			return "redirect:/";
 		else
 			return "redirect:signin/login";
+	}
+	
+	@RequestMapping("/myInfo")
+	public String myInfo(Model model) {
+
+		return "signIn/myInfo";
 	}
 }

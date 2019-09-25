@@ -7,5 +7,7 @@ import com.ryeom.demo.board.DTO.Boards;
 public interface BoardService {
 
 	public List<Boards> boardTest();
+	public void insertContents(Boards boards);
+	public List<Boards> loadMyPosts(Boards boards);
 	
 }

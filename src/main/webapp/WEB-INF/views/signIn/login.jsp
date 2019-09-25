@@ -22,6 +22,6 @@
 	</form>
 
 	<a href="join">회원가입</a>
-	<a href="findacc">ID/PW 찾기</a>
+	<a href="findacc">ID/PW 찾기 (미구현)</a>
 </body>
 </html>

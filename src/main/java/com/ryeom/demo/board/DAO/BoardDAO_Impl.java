@@ -19,4 +19,18 @@ public class BoardDAO_Impl implements BoardDAO {
 		// TODO Auto-generated method stub
 		return sql.selectList(Namespace+".boardtest");
 	}
+
+	@Override
+	public void insertContents(Boards boards) {
+		// TODO Auto-generated method stub
+		System.out.println(boards.getBoard_Writer());
+		sql.insert(Namespace + ".boardinsert", boards);
+	}
+
+	@Override
+	public List<Boards> loadMyPosts(Boards boards) {
+		// TODO Auto-generated method stub
+		System.out.println(boards.getBoard_Writer());
+		return sql.selectList(Namespace+".loadMyPosts", boards);
+	}
 }

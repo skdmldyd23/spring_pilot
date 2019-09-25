@@ -19,11 +19,13 @@
 		#{user_detailAddress},#{user_extraAddress});
 	</insert>
 
-	<select id="trySignIn" resultType="com.ryeom.demo.user.DTO.Users">
+	<select id="trySignIn"
+		resultType="com.ryeom.demo.user.DTO.Users">
 		SELECT * FROM user_table WHERE
-		user_ID = #{user_ID} and user_PW = #{user_PW};
+		user_ID = #{user_ID} and
+		user_PW = #{user_PW};
 	</select>
-	
+
 	<!-- <select id="selectMember" resultType="MemberVO"> SELECT USER_ID, USER_PW 
 		,NAME FROM USER </select> -->
 </mapper>
